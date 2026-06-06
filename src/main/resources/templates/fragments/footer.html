@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer th:fragment="footer" class="text-center mt-5 py-3 border-top text-muted small">
+    <div>
+        실습 수행 일시:
+        <span th:text="${#temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss')}"></span>
+        │ 학번: 2171183 │ 성명: 이승비
+    </div>
+</footer>
+</body>
+</html>
